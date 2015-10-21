@@ -1,0 +1,40 @@
+{
+  "name": "fancy-view",
+  "title": "Fancy-View",
+  "description": "JavaScript View-Plugin for Fancy",
+  "version": "0.0.3",
+  "main": "fancyview.min.js",
+  "homepage": "http://mephiztopheles.wtf/fancy.view",
+  "author": {
+    "name": "Markus Ahrweiler"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mephiztopheles/fancy.view.git"
+  },
+  "ignore": [
+    "source",
+    "spec",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "fancy",
+    "javascript",
+    "browser",
+    "view"
+  ],
+  "bugs": {
+    "url": "https://github.com/Mephiztopheles/fancy.view/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "fancy": ">=1.1.2"
+  }
+}

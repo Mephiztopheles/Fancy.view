@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="../bower_components/fancy/fancy.min.js"></script>
+        <script src="../fancyview.js"></script>
+        <style>
+            html, * {
+                margin  : 0;
+                padding : 0;
+            }
+
+            html, body {
+                height : 100%;
+            }
+
+            #view {
+                height   : 100%;
+                width    : 100%;
+                overflow : scroll;
+            }
+
+            .rainbow {
+                background : red; /* not working, let's see some red */
+                background : -moz-linear-gradient(top,
+                rgba(255, 0, 0, 1) 0%,
+                rgba(255, 255, 0, 1) 15%,
+                rgba(0, 255, 0, 1) 30%,
+                rgba(0, 255, 255, 1) 50%,
+                rgba(0, 0, 255, 1) 65%,
+                rgba(255, 0, 255, 1) 80%,
+                rgba(255, 0, 0, 1) 100%);
+                background : -webkit-gradient(linear, left top, left bottom,
+                color-stop(0%, rgba(255, 0, 0, 1)),
+                color-stop(15%, rgba(255, 255, 0, 1)),
+                color-stop(30%, rgba(0, 255, 0, 1)),
+                color-stop(50%, rgba(0, 255, 255, 1)),
+                color-stop(65%, rgba(0, 0, 255, 1)),
+                color-stop(80%, rgba(255, 0, 255, 1)),
+                color-stop(100%, rgba(255, 0, 0, 1)));
+            }
+        </style>
+        <script>
+            $( function() {
+                Fancy( "#view" ).view();
+            } )
+        </script>
+    </head>
+    <body>
+        <div id="view" class="rainbow">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/LARGE_elevation.jpg" alt=""/>
+        </div>
+    </body>
+</html>
